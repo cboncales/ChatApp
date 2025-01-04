@@ -1,9 +1,10 @@
+<<<<<<< HEAD
 # Django Encrypted Real-Time Chat Application
 
 A secure, real-time chat application built with Django, featuring end-to-end encryption and WebSocket communication.
 
 Web app Installation: 
-1.	Clone the Repository in this link: https://github.com/wawerks/DjangoProject.git .
+1.	Clone the Repository in this link: https://github.com/cboncales/ChatApp.git .
 2.	Navigate to DjangoProject.
 3.	Go to DjangoProject-App1/a_core/settings.py and change the database directory where the DjangoProject-App2 database directory located.
 4.	Ensure that python is properly installed on your device.
