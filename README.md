@@ -1,55 +1,6 @@
-# Django Encrypted Messaging Application
+# Messaging Application
 
 A secure, real-time chat application built with Django, featuring end-to-end encryption and WebSocket communication.
-
-Web app Installation: 
-1.	Clone the Repository in this link: https://github.com/cboncales/ChatApp.git .
-2.	Navigate to DjangoProject.
-3.	Go to DjangoProject-App1/a_core/settings.py and change the database directory where the DjangoProject-App2 database directory located.
-4.	Ensure that python is properly installed on your device.
-5.	Open integrated Terminal on DjangoProject-App1 and run pip install requirements.txt.
-6.	Run the server on App1, run python manage.py runserver.
-7.	Open integrated Terminal on DjangoProject-App2 and run pip install requirements.txt.
-8.	Navigate to ab_core.
-9.	Run the server on App2, run python manage.py runserver 8081.
-10.	Open the browser with the applications URL.
-    
-## 🌟 Features
-
-- **Real-time Communication**
-  - WebSocket-based chat using Django Channels
-  - REST API endpoints for secure message transmission
-  - Instant message delivery
-  - Group chat support
-
-- **Security**
-  - End-to-end encryption using Fernet
-  - Custom encryption middleware
-  - JWT-based authentication
-  - CORS protection
-  - Secure user authentication
-  - Protected WebSocket connections
-  - CSRF protection
-
-- **REST API Features**
-  - Secure message transmission
-  - User management endpoints
-  - Group chat operations
-  - JWT authentication
-  - Rate limiting
-  - Request/Response encryption
-
-- **User Management**
-  - User registration and authentication
-  - Profile management
-  - Session handling
-  - JWT token management
-
-- **Modern UI/UX**
-  - Responsive design with Tailwind CSS
-  - Real-time updates with HTMX
-  - Dynamic interactions with AlpineJS
-  - Dark mode support
 
 ## 🏗 Architecture
 
@@ -68,38 +19,6 @@ DjangoProject-App1/
 ```bash
 DjangoProject-App2/
 └── ab_core/         # Backend API and storage
-```
-
-## 🔧 Technical Stack
-
-- **Backend Framework**
-  - Django 5.0+
-  - Django Channels (WebSocket)
-  - Django REST Framework
-  - SQLite/PostgreSQL
-
-- **Frontend Technologies**
-  - HTML/CSS/JavaScript
-  - Tailwind CSS
-  - HTMX
-  - AlpineJS
-
-- **Security**
-  - django-allauth
-  - cryptography (Fernet)
-  - Django's security middleware
-
-## 📦 Dependencies
-
-```plaintext
-Django
-django-allauth
-django-htmx
-django-cleanup
-Pillow
-channels
-cryptography
-daphne
 ```
 
 ## 🚀 Installation
@@ -236,34 +155,6 @@ python manage.py runserver 8081
    - Check channel layer configuration
    - Ensure Redis is running (if using Redis channel layer)
 
-## 🔗 API Endpoints
-
-### Authentication
-- `POST /api/token/` - Obtain JWT token pair
-- `POST /api/token/refresh/` - Refresh JWT token
-
-### Users
-- `GET /api/users/` - List all users
-- `GET /api/users/{id}/` - Get user details
-
-### Chat Groups
-- `GET /api/groups/` - List all chat groups
-- `POST /api/groups/` - Create new chat group
-- `GET /api/groups/{id}/` - Get group details
-- `PUT /api/groups/{id}/` - Update group
-- `DELETE /api/groups/{id}/` - Delete group
-
-### Messages
-- `GET /api/groups/{id}/messages/` - List group messages
-- `POST /api/groups/{id}/messages/` - Send new message
-- `GET /api/groups/{id}/messages/{msg_id}/` - Get message details
-
-All API endpoints are protected with:
-- JWT authentication
-- Request/Response encryption
-- Rate limiting
-- CORS protection
-
 ## 💬 Usage
 
 1. Register a new account or login
@@ -294,38 +185,3 @@ All API endpoints are protected with:
 ```bash
 python manage.py test
 ```
-
-### Code Style
-Follow PEP 8 guidelines for Python code.
-
-## 📝 API Documentation
-
-### WebSocket Endpoints
-- `ws/chatroom/<chatroom_name>` - Chat room WebSocket endpoint
-
-### HTTP Endpoints
-- `/` - Home page
-- `/chat/` - Chat interface
-- `/accounts/` - User authentication views
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Commit your changes
-4. Push to the branch
-5. Open a Pull Request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 👥 Authors
-
-- [Your Name]
-
-## 🙏 Acknowledgments
-
-- Django Framework
-- Django Channels Team
-- HTMX and AlpineJS communities
