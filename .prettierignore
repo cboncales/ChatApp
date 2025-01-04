@@ -1,0 +1,3 @@
+templates/includes/header.html
+templates/base.html
+a_rtchat/templates/a_rtchat/chat.html
