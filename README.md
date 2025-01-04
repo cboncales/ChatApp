@@ -47,13 +47,17 @@ SECRET_KEY=your_secret_key
 DEBUG=True
 ENCRYPT_KEY=your_encryption_key
 ```
+5. Set up environment variables
+```bash
+Go to DjangoProject-App1/a_core/settings.py and change the database directory where the DjangoProject-App2 database directory located.
+```
 
-5. Run migrations
+6. Run migrations
 ```bash
 python manage.py migrate
 ```
 
-6. Start the development server
+7. Start the development server
 ```bash
 python manage.py runserver
 ```
