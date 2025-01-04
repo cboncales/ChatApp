@@ -47,7 +47,7 @@ SECRET_KEY=your_secret_key
 DEBUG=True
 ENCRYPT_KEY=your_encryption_key
 ```
-5. Set up environment variables
+5. Set up database path
 ```bash
 Go to DjangoProject-App1/a_core/settings.py and change the database directory where the DjangoProject-App2 database directory located.
 ```
