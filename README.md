@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-# Django Encrypted Real-Time Chat Application
+# Django Encrypted Messaging Application
 
 A secure, real-time chat application built with Django, featuring end-to-end encryption and WebSocket communication.
 
